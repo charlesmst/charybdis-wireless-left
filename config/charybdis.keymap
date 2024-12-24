@@ -55,10 +55,9 @@
         y-invert;
         bindings = <&ib_wheel_scaler 1 16>;
     };
-
     ib_wheel_scaler: ib_wheel_scaler {
         compatible = "zmk,input-behavior-scaler";
-        #binding-cells = <1>;
+        #binding-cells = <2>;
         evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_WHEEL>;
     };
