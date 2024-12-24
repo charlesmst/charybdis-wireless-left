@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: charlesmst
+      url-base: https://github.com/charlesmst
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -11,8 +13,8 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: badjeff
+    - name: zmk-pmw3610-driver-badjeff
+      remote: charlesmst
       revision: main
     - name: zmk-split-peripheral-input-relay
       remote: badjeff
