@@ -120,6 +120,19 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&tog>;
         };
+        td_alt: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LALT>, <&to WINDO>;
+        };
+
+        td_mo: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <MO_TOG(MOUSE)>, <&to GAMIN>;
+        };
     };
 
     macros {
@@ -206,7 +219,7 @@
 &trans &kp Q    &kp W        &kp E       &kp R       &kp T              &kp Y          &kp U       &kp I       &kp O         &kp P           &trans
 &trans &lt TILWI A  &hm LCTRL S  &hm LALT D  &hm LGUI F  &kp G              &kp H          &hm LGUI J  &hm RALT K  &hm RCTRL L   &lt TILWI SEMI      &trans
 &trans &kp Z    &kp X        &kp C       &kp V       &kp B              &kp N          &kp M       &kp COMMA   &hm RALT DOT  &hm RCTRL FSLH  &trans
-                                 MO_TOG(MOUSE)    &mo NUMBE       &hm LSHFT SPACE    &hk LSHFT RET  &mo SYMBO       
+                                 &td_mo    &mo NUMBE       &hm LSHFT SPACE    &hk LSHFT RET  &mo SYMBO       
             >;
         };
 
@@ -216,7 +229,7 @@
 &trans &kp TAB   &kp Q  &kp W  &kp E         &kp R          &kp Y          &kp U       &kp I       &kp O         &kp P           &trans
 &trans &kp LCTRL &kp A  &kp S  &kp D         &kp F          &kp H          &hm LGUI J  &hm RALT K  &hm RCTRL L   &lt TILIN SEMI  &trans
 &trans &kp LSHFT &kp Z  &kp X  &kp C         &kp V          &kp N          &kp M       &kp COMMA   &hm RALT DOT  &hm RCTRL FSLH  &trans
-                         &kp LEFT_ALT  &mo LOGAM  &kp SPACE    &to WINDO  &mo SYMBO       
+                         &td_alt  &mo LOGAM  &kp SPACE    &to WINDO  &mo SYMBO       
             >;
         };
 
