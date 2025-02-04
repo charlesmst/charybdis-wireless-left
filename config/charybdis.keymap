@@ -138,7 +138,7 @@
             label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <23>;
+            ignored-key-positions = <26>;
         };
         w1: w1 {
             compatible = "zmk,behavior-tri-state";
@@ -364,10 +364,10 @@
         tiling_win_layer {
             label = "TWin";
             bindings = <
-&trans &kp LG(N1)    &kp LG(N2)      &kp LG(N3)                  &kp LG(N4)                  &kp LG(N5)                    &kp LG(N6)   &kp LG(N7)  &kp LG(N8)  &kp LG(N9) &trans  &trans
+&trans &w1           &w2             &w3                         &w4                         &w5                           &w6          &w7         &w8         &w9        &trans  &trans
 &trans &trans        &swap           &hs LC(LA(LS(E))) LA(LS(E)) &hs LC(LA(LS(R))) LA(LS(R)) &hs LC(LA(LS(T))) LA(LS(T))   &trans       &trans      &trans      &trans                         &trans  &trans
 &trans &kp LA(LS(D)) &kp LS(TAB)     &kp LA(LS(D))               &trans                      &trans                        &trans       &trans      &trans                      &trans                      &trans  &trans
-                                                                  &trans                      &trans                         &kp LGUI                    &trans                         &trans                         
+                                                                 &trans                      &trans                         &kp LGUI                    &trans                         &trans                         
             >;
         };
 
