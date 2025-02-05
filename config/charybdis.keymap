@@ -264,8 +264,13 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <31 32 33 34>;
+            key-positions = <31 32 33>;
             bindings = <&tog MOUSE>;
+        };
+        combo_gamin {
+            timeout-ms = <50>;
+            key-positions = <26 27 28>;
+            bindings = <&tog GAMIN>;
         };
     };
 
