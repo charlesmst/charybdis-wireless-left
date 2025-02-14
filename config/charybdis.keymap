@@ -283,7 +283,7 @@
 &trans &kp Q    &kp W        &kp E       &kp R       &kp T              &kp Y          &kp U       &kp I       &kp O         &kp P           &trans
 &trans &lt TILIN A  &hm LCTRL S  &hm LALT D  &hm LGUI F  &kp G              &kp H          &hm LGUI J  &hm RALT K  &hm RCTRL L   &lt TILIN SEMI      &trans
 &trans &kp Z    &kp X        &kp C       &kp V       &kp B              &kp N          &kp M       &kp COMMA   &hm RALT DOT  &hm RCTRL FSLH  &trans
-                                 MO_TOG(MOUSE)    &mo NUMBE       &hm LSHFT SPACE    &hk LSHFT RET  &mo SYMBO       
+                                 MO_TOG(MOUSE)    &mo NUMBE       &hm LSHFT SPACE    &hk RSHFT RET  &mo SYMBO       
             >;
         };
 
@@ -293,7 +293,7 @@
 &trans &kp Q    &kp W        &kp E       &kp R       &kp T              &kp Y          &kp U       &kp I       &kp O         &kp P           &trans
 &trans &lt TILWI A  &hm LCTRL S  &hm LALT D  &hm LGUI F  &kp G              &kp H          &hm LGUI J  &hm RALT K  &hm RCTRL L   &lt TILWI SEMI      &trans
 &trans &kp Z    &kp X        &kp C       &kp V       &kp B              &kp N          &kp M       &kp COMMA   &hm RALT DOT  &hm RCTRL FSLH  &trans
-                                 MO_TOG(MOUSE)    &mo NUMBE       &hm LSHFT SPACE    &hk LSHFT RET  &mo SYMBO       
+                                 MO_TOG(MOUSE)    &mo NUMBE       &hm LSHFT SPACE    &hk RSHFT RET  &mo SYMBO       
             >;
         };
 
@@ -349,9 +349,9 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&trans &trans    &trans          &mmv MOVE_UP    &trans          &msc MOVE_DOWN                &kp LA(LS(A))  &kp LC(UP)    &kp LA(LS(D))  &trans &trans                &trans
-&trans &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc MOVE_UP                  &trans          &mkp MB4        &mkp MB5        &trans          &trans   &trans
-&trans &mo SNIPE MO_TOG(SCROL)   &mkp MB2        &mkp MB1        &mkp MB3            &mkp MB3        &mkp MB1        &mkp MB2        MO_TOG(SCROL)        &mo SNIPE     &trans
+&trans &trans    &trans          &mmv MOVE_UP    &trans          &msc MOVE_Y(140)    &kp LA(LS(A))   &kp LC(UP)      &kp LA(LS(D))   &trans          &trans                &trans
+&trans &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc MOVE_Y(-140)   &trans          &mkp MB4        &mkp MB5        &trans          &trans   &trans
+&trans &mo SNIPE MO_TOG(SCROL)   &mkp MB2        &mkp MB1        &mkp MB3            &mkp MB3        &mkp MB1        &mkp MB2        MO_TOG(SCROL)   &mo SNIPE     &trans
                                  &dmouse    &trans    &trans       &dmouse    &mkp MB1     
             >;
         };
