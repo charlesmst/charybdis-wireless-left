@@ -258,6 +258,22 @@
             tap-ms = <0>;
             bindings = <&mo MOUSE>, <&mo SCROL>,  <&mo SNIPE>;
         };
+        deskhop1: deskhop1 {
+            label = "deskhop1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&kp RC(RA(N1))>, <&to WINDO>;
+        };
+        deskhop2: deskhop2 {
+            label = "deskho2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&kp RC(RA(N2))>, <&to WINDO>;
+        };
     };
 
     combos {
@@ -349,9 +365,9 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&trans &trans    &trans          &mmv MOVE_UP    &trans          &msc MOVE_Y(140)    &kp LA(LS(A))   &kp LC(UP)      &kp LA(LS(D))   &trans          &trans                &trans
-&trans &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc MOVE_Y(-140)   &trans          &mkp MB4        &mkp MB5        &trans          &trans   &trans
-&trans &mo SNIPE MO_TOG(SCROL)   &mkp MB2        &mkp MB1        &mkp MB3            &mkp MB3        &mkp MB1        &mkp MB2        MO_TOG(SCROL)   &mo SNIPE     &trans
+&trans &deskhop2    &deskhop1       &mmv MOVE_UP    &trans          &msc MOVE_Y(140)    &kp LA(LS(A))   &kp LC(UP)      &kp LA(LS(D))   &trans          &trans                &trans
+&trans &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc MOVE_Y(-140)   &trans          &mkp MB4        &mkp MB5        &trans          &trans   &trans
+&trans &mo SNIPE    MO_TOG(SCROL)   &mkp MB2        &mkp MB1        &mkp MB3            &mkp MB3        &mkp MB1        &mkp MB2        MO_TOG(SCROL)   &mo SNIPE     &trans
                                  &dmouse    &trans    &trans       &dmouse    &mkp MB1     
             >;
         };
