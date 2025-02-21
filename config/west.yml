@@ -23,12 +23,6 @@ manifest:
     - name: zmk-pmw3610-driver-badjeff
       remote: charlesmst
       revision: main
-    - name: zmk-split-peripheral-input-relay
-      remote: badjeff
-      revision: main
-    - name: zmk-input-behavior-listener
-      remote: badjeff
-      revision: main
     - name: zephyr
       revision: v3.5.0+zmk-fixes
       clone-depth: 1
