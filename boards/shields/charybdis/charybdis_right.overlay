@@ -37,6 +37,13 @@
     status = "okay";
 };
 
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+    };
+};
+
 &glidepoint_split {
     status = "okay";
     device = <&trackball>;
